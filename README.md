@@ -1,6 +1,6 @@
-# introduction-to-git
+# A short introduction to Git
 
-This is my study about Git, is based (more like a copy) on a course of DataCamp "Introduction  to Git".
+This is my study about Git, is based (more like a copy) on a course of DataCamp "Introduction to Git".
 
 ## What is version control?
 
@@ -22,12 +22,52 @@ Git stores all of this "Extra infos" in a directory called `.git` located in the
 
 If a home directory `/home/repl` contains a repository called `dental`, which has a  sub-directory called `data`, the information about the history of the files in `/home/repl/dental/data` is in `/home/repl/dental/.git` because all of the information about repository is stored under its root directory and `data` is just a sub-directory
 
+## How can I check the state of a repository?
 
+Everytime in Git you will want to check the status of your repository. To do this, run the command
 
+```
+git status
+```
+which display the branch that you where and a list of all files that have been modified since the last changes were saved
 
+## How can I tell what I have changed?
 
+Git has a staging area in which it stores files with changes that haven't been saved yet. Making an analogy with the email, putting files in the stagging area is like puttin things in a draft that can be changed, adding or taking things. While committing those changes is like send the email, once you send can't make further changes
 
+![](https://miro.medium.com/max/686/1*diRLm1S5hkVoh5qeArND0Q.png)
 
+`git status` shows you which files are in this staging area, and which files have changes that haven't yet been put there. `git diff` compare the file as it currently is to what you last saved. Run the command without any filenames to show all the changes in your repository
+
+```
+git diff
+```
+ and use the command below to show the changes to the files in some directory
+
+```
+git diff filename
+```
+
+## What is in a diff?
+
+Previously we saw __when__ use the command `git diff`, now we gonna see __what__ is in your output
+
+```
+diff --git a/report.txt b/report.txt
+index e713b17..4c0742a 100644
+--- a/report.txt
++++ b/report.txt
+@@ -1,4 +1,5 @@
+-# Seasonal Dental Surgeries 2017-18
++# Seasonal Dental Surgeries (2017) 2017-18
++# TODO: write new summary
+```
+
+- `a` and `b` are placeholders meaning the first and the second version simultaneously
+- The index line will be explored further
+- `---a/report.txt` represents the lines there are removed and `+++ b/report.txt` the lines there are added
+- A line starting with `@@` that tells where the changes are being made. The pair represents the _start line_ and the _number of lines_, in this case the changes starting at line 1, with 5 lines where there were onde 4
+-
 
 
 
