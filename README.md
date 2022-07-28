@@ -67,7 +67,7 @@ index e713b17..4c0742a 100644
 - The index line will be explored further
 - `---a/report.txt` represents the lines there are removed and `+++ b/report.txt` the lines there are added
 - A line starting with `@@` that tells where the changes are being made. The pair represents the _start line_ and the _number of lines_, in this case the changes starting at line 1, with 5 lines where there were onde 4
--
+- A line-by-line listing of the changes with `-` to show deletions and `+` to show addictions, we can also configure Git to show deletions in red and additions in green
 
 
 
