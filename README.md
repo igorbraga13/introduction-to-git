@@ -69,16 +69,21 @@ index e713b17..4c0742a 100644
 - A line starting with `@@` that tells where the changes are being made. The pair represents the _start line_ and the _number of lines_, in this case the changes starting at line 1, with 5 lines where there were onde 4
 - A line-by-line listing of the changes with `-` to show deletions and `+` to show addictions, we can also configure Git to show deletions in red and additions in green
 
+para utilizar a função tal 
+
+```
+git init
+```
 
 # Funções:
 
-## checkout
+## CHECKOUT
 Ao clonar um respositório se torna necessário criar uma branch para trabalhar `git checkout -b "new_branch"`
 `git branch -a` irá listar todas as branchs do repositório
 `git checkout "branch"` irá mudar para uma branch já existente
-## add
+## ADD
 
-## commit
+## COMMIT
 
 ### reset ou revert
 
@@ -102,17 +107,19 @@ git commit --amend --no-edit
 ```
 Nesse caso o `--no-edit` permitirá adicionar o main.py no commit, sem a necessidade de alterar ou criar um novo commit. O commit resultante irá substituir o incompleto e entenderá que fizemos o commit das alterações hello.py e main.py em um único snapshot
 
-## diff
+## DIFF
 
-## stash
+## STASH
 
+## PULL
 
-para utilizar a função tal 
+Antes de começar a trabalhar em um projeto é interessante rodar o `git pull origin branch` para puxar a versão mais recente da branch e continuar o trabalho a partir daí.
+`git config pull.rebase false` # merge
+`git config pull.rebase true` # rebase
+O comando `git config pull.ff only` significa fast-forward only, nesse caso fazemos com que esse seu último commit seja o final da branch em questão, sobreponto todos os commits posteriores ao momento em que sua branch foi clonada.
 
-```
-git init
-```
 
 # Referências
 https://www.atlassian.com/git/tutorials
+
 stackoverflow.com
