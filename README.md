@@ -70,8 +70,41 @@ index e713b17..4c0742a 100644
 - A line-by-line listing of the changes with `-` to show deletions and `+` to show addictions, we can also configure Git to show deletions in red and additions in green
 
 
+# Funções:
 
+## checkout
+Ao clonar um respositório se torna necessário criar uma branch para trabalhar `git checkout -b "new_branch"`
+`git branch -a` irá listar todas as branchs do repositório
+`git checkout "branch"` irá mudar para uma branch já existente
+## add
 
+## commit
+
+### reset ou revert
+
+Caso ainda não tenha feito o push no commit é possível utilizar o comando `git reset`, caso o push já tenha sido efetuado é necessário utilizar o `git revert` para criar um novo commit que irá apagar o anterior. O comando `git revert HEAD~1` reverte o último commit, enquanto o `git revert HEAD~2` reverte os dois últimos commits.O mesmo se aplica para `git reset HEAD~1`.
+Utilizar o `git reset` após ter dado o push irá desfazer o último commit, e como já foi enviado para a branch, a copia local será invalidada.
+
+### amend
+
+O comando `git commit --amend` permite editar o último commit. Ele nos permite combinar alterações preparadas com o commit anterior ao invés de criar um novo commit. Podemos utilizá-lo para editar nossa mensagem de commit anterior sem alterar seu snapshot. Essa alteração substitui o commit, de modo que o commit alterado será uma nova entidade com referência própria.
+O comando `git commit --amend -m "an updated commit message"` permite que você passe um novo texto no commit, sem a necessidade de abrir um editor
+
+Caso tenha submetido um commit e queira adicionar mais alguma alteração sem alterar o conteúdo do seu commit é possível utilizar o comando `git commit --amend --no-edit` como no exemplo abaixo:
+
+```bash
+# Edit hello.py and main.py
+git add hello.py
+git commit 
+# Realize you forgot to add the changes from main.py 
+git add main.py 
+git commit --amend --no-edit
+```
+Nesse caso o `--no-edit` permitirá adicionar o main.py no commit, sem a necessidade de alterar ou criar um novo commit. O commit resultante irá substituir o incompleto e entenderá que fizemos o commit das alterações hello.py e main.py em um único snapshot
+
+## diff
+
+## stash
 
 
 para utilizar a função tal 
@@ -79,3 +112,7 @@ para utilizar a função tal
 ```
 git init
 ```
+
+# Referências
+https://www.atlassian.com/git/tutorials
+stackoverflow.com
