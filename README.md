@@ -124,3 +124,5 @@ O comando `git config pull.ff only` significa fast-forward only, nesse caso faze
 https://www.atlassian.com/git/tutorials
 
 stackoverflow.com
+
+https://learngitbranching.js.org/?locale=pt_BR
