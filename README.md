@@ -89,6 +89,7 @@ Ao clonar um respositório se torna necessário criar uma branch para trabalhar 
 
 Caso ainda não tenha feito o push no commit é possível utilizar o comando `git reset`, caso o push já tenha sido efetuado é necessário utilizar o `git revert` para criar um novo commit que irá apagar o anterior. O comando `git revert HEAD~1` reverte o último commit, enquanto o `git revert HEAD~2` reverte os dois últimos commits.O mesmo se aplica para `git reset HEAD~1`.
 Utilizar o `git reset` após ter dado o push irá desfazer o último commit, e como já foi enviado para a branch, a copia local será invalidada.
+É importa lembrar que para utilizar essas ferramentas não podem ser feita alterações locais entre o momento do push e do reset/revert, caso contrário ocorrerá conflito entre a branch local e e remota, devido aos arquivos ainda não mergeados.
 
 ### amend
 
