@@ -119,6 +119,9 @@ Antes de começar a trabalhar em um projeto é interessante rodar o `git pull or
 `git config pull.rebase true` # rebase
 O comando `git config pull.ff only` significa fast-forward only, nesse caso fazemos com que esse seu último commit seja o final da branch em questão, sobreponto todos os commits posteriores ao momento em que sua branch foi clonada.
 
+### fetch
+
+`git fetch` mostra as branchs novas criadas
 
 # Referências
 https://www.atlassian.com/git/tutorials
