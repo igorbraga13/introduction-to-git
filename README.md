@@ -80,7 +80,11 @@ git init
 ## CHECKOUT
 Ao clonar um respositório se torna necessário criar uma branch para trabalhar `git checkout -b "new_branch"`
 `git branch -a` irá listar todas as branchs do repositório
+
 `git checkout "branch"` irá mudar para uma branch já existente
+
+`git branch -m new_branch_name` irá renomear o nome da sua branch
+
 ## ADD
 
 ## COMMIT
