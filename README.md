@@ -130,6 +130,10 @@ O comando `git config pull.ff only` significa fast-forward only, nesse caso faze
 
 `git fetch` mostra as branchs novas criadas
 
+## DELETE
+
+`git branch -d branch_name` apaga a sua branch local
+
 # Referências
 https://www.atlassian.com/git/tutorials
 
