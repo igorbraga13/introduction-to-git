@@ -119,8 +119,11 @@ Nesse caso o `--no-edit` permitirá adicionar o main.py no commit, sem a necessi
 ## PULL
 
 Antes de começar a trabalhar em um projeto é interessante rodar o `git pull origin branch` para puxar a versão mais recente da branch e continuar o trabalho a partir daí.
+
 `git config pull.rebase false` # merge
+
 `git config pull.rebase true` # rebase
+
 O comando `git config pull.ff only` significa fast-forward only, nesse caso fazemos com que esse seu último commit seja o final da branch em questão, sobreponto todos os commits posteriores ao momento em que sua branch foi clonada.
 
 ### fetch
