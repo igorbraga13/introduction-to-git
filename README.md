@@ -1,6 +1,8 @@
 # A short introduction to Git
 
-This is my study about Git, is based (more like a copy) on a course of DataCamp "Introduction to Git".
+This is my study about Git, is based (more like a copy) on a course of DataCamp "Introduction to Git" and a github of leocomelli
+
+
 
 ## What is version control?
 
@@ -111,6 +113,8 @@ git add main.py
 git commit --amend --no-edit
 ```
 Nesse caso o `--no-edit` permitirá adicionar o main.py no commit, sem a necessidade de alterar ou criar um novo commit. O commit resultante irá substituir o incompleto e entenderá que fizemos o commit das alterações hello.py e main.py em um único snapshot
+
+## LOG
 
 ## DIFF
 
