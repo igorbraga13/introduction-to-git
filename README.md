@@ -89,6 +89,11 @@ Ao clonar um respositório se torna necessário criar uma branch para trabalhar 
 
 ## ADD
 
+`git add --all --:!path/file` exclude certain paths and files by pathspec magic `:(exclude)` or the shortest form `:!`
+
+in Mac and Linux you need to surround each file/folder path with quotes like:
+`git add --all -- ':!path/file1' ':!path/file2' ':!path/file3'`
+
 ## COMMIT
 
 ### reset ou revert
