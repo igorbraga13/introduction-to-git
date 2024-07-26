@@ -143,6 +143,8 @@ O comando `git config pull.ff only` significa fast-forward only, nesse caso faze
 
 `git branch -d branch_name` apaga a sua branch local
 
+## ABORT
+
 # Referências
 https://www.atlassian.com/git/tutorials
 
