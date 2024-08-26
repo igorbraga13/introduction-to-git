@@ -151,3 +151,5 @@ https://www.atlassian.com/git/tutorials
 stackoverflow.com
 
 https://learngitbranching.js.org/?locale=pt_BR
+
+github.com/iuricode/padroes-de-commits
