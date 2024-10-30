@@ -102,6 +102,20 @@ Caso ainda não tenha feito o push no commit é possível utilizar o comando `gi
 Utilizar o `git reset` após ter dado o push irá desfazer o último commit, e como já foi enviado para a branch, a copia local será invalidada.
 É importa lembrar que para utilizar essas ferramentas não podem ser feita alterações locais entre o momento do push e do reset/revert, caso contrário ocorrerá conflito entre a branch local e e remota, devido aos arquivos ainda não mergeados.
 
+#### soft
+
+```bash
+git reverse HEAD~1 --soft
+```
+o --soft expurga seu historico do commit mas mantem seus arquivos inalterados
+
+#### hard
+
+```bash
+git reverse HEAD~1 --hard
+```
+o --hard reverte todas as alterações e arquivos para o formato anterior ao commit, perdendo todas as alterações
+
 ### amend
 
 O comando `git commit --amend` permite editar o último commit. Ele nos permite combinar alterações preparadas com o commit anterior ao invés de criar um novo commit. Podemos utilizá-lo para editar nossa mensagem de commit anterior sem alterar seu snapshot. Essa alteração substitui o commit, de modo que o commit alterado será uma nova entidade com referência própria.
