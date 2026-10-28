@@ -96,7 +96,11 @@ in Mac and Linux you need to surround each file/folder path with quotes like:
 
 ## COMMIT
 
-### reset ou revert
+```bash
+git commit -m "Comentário do seu commit"
+```
+
+## reset ou revert
 
 Caso ainda não tenha feito o push no commit é possível utilizar o comando `git reset`, caso o push já tenha sido efetuado é necessário utilizar o `git revert` para criar um novo commit que irá apagar o anterior. O comando `git revert HEAD~1` reverte o último commit, enquanto o `git revert HEAD~2` reverte os dois últimos commits.O mesmo se aplica para `git reset HEAD~1`.
 Utilizar o `git reset` após ter dado o push irá desfazer o último commit, e como já foi enviado para a branch, a copia local será invalidada.
